@@ -24,5 +24,4 @@ SELECT C.NomeCompleto,
 	   (SELECT COUNT(*) FROM TB_PEDIDO AS P WHERE P.ClienteId = C.ClienteId) [Total Pedidos]
 FROM TB_CLIENTE AS C
 ORDER BY [Total Pedidos] DESC
-				WHERE C.ClienteId = P.ClienteId AND
 
